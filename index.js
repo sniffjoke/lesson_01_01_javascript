@@ -59,28 +59,28 @@
 // Иммутабельные - не мутируют исходный массив (под капотом идет создание нового массива)
 // push, pop, unshift, shift, reverse, splice - мутабельные
 
-const users = [
-    {
-        id: 1,
-        name: 'Bob',
-        isStudent: true,
-    },
-    {
-        id: 2,
-        name: 'Alex',
-        isStudent: true,
-    },
-    {
-        id: 3,
-        name: 'Ann',
-        isStudent: true,
-    },
-    {
-        id: 4,
-        name: 'Donald',
-        isStudent: true,
-    },
-]
+// const users = [
+//     {
+//         id: 1,
+//         name: 'Bob',
+//         isStudent: true,
+//     },
+//     {
+//         id: 2,
+//         name: 'Alex',
+//         isStudent: true,
+//     },
+//     {
+//         id: 3,
+//         name: 'Ann',
+//         isStudent: true,
+//     },
+//     {
+//         id: 4,
+//         name: 'Donald',
+//         isStudent: true,
+//     },
+// ]
 
 // const result = users.pop()
 // console.log('users: ', users)
@@ -157,12 +157,30 @@ const users = [
 
 /////////////// Деструктуризация
 
+// const employee = {
+//     firstName: 'Ivan',
+//     lastName: 'Ivanov',
+//     middleName: 'Ivanovich',
+// };
+
+// const {firstName, lastName} = employee
+
+// console.log(firstName, lastName)
+
+// const firstName = "Test Value"
+
+// const {firstName: newName} = employee
+// console.log(newName)
+
 const employee = {
     firstName: 'Ivan',
     lastName: 'Ivanov',
     middleName: 'Ivanovich',
+    // role: 'admin'
 };
+// Если админ - то в объекте добавляется свойство role, а если не админ, то не добавляем его
 
-const {firstName, lastName} = employee
+const {firstName, lastName, role = 'user'} = employee
+console.log('user: ', role) // user: user
 
-console.log(firstName, lastName)
+
