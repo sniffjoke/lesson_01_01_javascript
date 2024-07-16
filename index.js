@@ -172,15 +172,45 @@
 // const {firstName: newName} = employee
 // console.log(newName)
 
-const employee = {
-    firstName: 'Ivan',
-    lastName: 'Ivanov',
-    middleName: 'Ivanovich',
-    // role: 'admin'
-};
+// const employee = {
+//     firstName: 'Ivan',
+//     lastName: 'Ivanov',
+//     middleName: 'Ivanovich',
+//     role: 'admin'
+// };
 // Если админ - то в объекте добавляется свойство role, а если не админ, то не добавляем его
+//
+// const {firstName, lastName, role = 'user'} = employee
+// console.log('user: ', role) // user: user
 
-const {firstName, lastName, role = 'user'} = employee
-console.log('user: ', role) // user: user
+// const employee = {
+//     firstName: 'Ivan',
+//     lastName: 'Ivanov',
+//     middleName: 'Ivanovich',
+//     message: 'Hello world!',
+//     permission: {
+//         canEdit: true,
+//         canDelete: false,
+//         role: 'user',
+//     },
+// };
+//
+// let canEdit = 'Test'
+//
+// const {firstName, lastName, permission: {canEdit: newCanEdit, canDelete}} = employee;
+//
+// console.log(newCanEdit, canDelete, firstName, canEdit);
 
+// const colors = ['red', 'blue', 'green', 'white', 'black'];
 
+// const redColor = colors[0]
+// const blueColor = colors[1]
+
+// const [redColor, secondValue, thirdValue] = colors
+
+// console.log(redColor)
+
+// const colors = ['red', 'blue', 'green', 'white', 'black'];
+// const [firstValue, , thirdValue, fourthValue] = colors
+
+// console.log(firstValue, thirdValue, fourthValue)
