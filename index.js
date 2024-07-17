@@ -214,3 +214,22 @@
 // const [firstValue, , thirdValue, fourthValue] = colors
 
 // console.log(firstValue, thirdValue, fourthValue)
+
+// const colors = ['red', [1, 2], 'green', 'white', 'black'];
+//
+// const [firstValue, [ , secondNumber], , secondValue] = colors
+// console.log(firstValue, secondNumber, secondValue)
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// const [firstValue, secondValue, ...rest] = array
+
+// console.log(rest)
+
+const user = {
+    name: 'Vika'
+};
+
+let name = 'Ivan';
+({ name } = user);
+console.log(name);
